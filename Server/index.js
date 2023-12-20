@@ -8,7 +8,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 const dotenv = require("dotenv");
-dotenv.config({ path: "./development.env" });
+dotenv.config({ path: "./.env" });
 
 const pool = new Pool({
   host: process.env.DB_HOST,
